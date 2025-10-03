@@ -1,12 +1,8 @@
 //navbar.ts
 import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { RouterModule } from "@angular/router";
+import { NavItem } from "@swe-demo/shared-domain";
 
-export interface NavItem {
-  label: string;
-  path: string;
-  icon?: string; // optional material icon name
-}
 
 @Component({
   selector: "lib-navbar",

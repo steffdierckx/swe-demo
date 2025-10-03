@@ -1,7 +1,8 @@
 //navbar-container.ts
-import { Component, computed, inject } from "@angular/core";
-import { Router, RouterModule } from "@angular/router";
+import { Component} from "@angular/core";
+import { RouterModule } from "@angular/router";
 import { Navbar } from "@swe-demo/swe-demo-ui";
+import { NavItem } from "@swe-demo/shared-domain";
 
 @Component({
   selector: "lib-swe-demo-feature-navbar-container",
@@ -11,7 +12,7 @@ import { Navbar } from "@swe-demo/swe-demo-ui";
 })
 export class NavbarContainer {
 
-  readonly items =[
+  readonly items: NavItem[] = [
     { label: "Home", path: "/" },
     { label: "Products", path: "/products" },
     { label: "Account", path: "/account" },
